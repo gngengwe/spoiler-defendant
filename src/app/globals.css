@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #060A14;
+    color: #E8ECF4;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(192, 21, 42, 0.35);
+    color: #F4F6FA;
+  }
+}
+
+/* ── Utilities ─────────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Film grain — fixed noise overlay rendered once via SVG filter */
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.08;
+  }
+
+  /* Redacted block — covers text with a solid bar */
+  .redacted {
+    background-color: #E8ECF4;
+    color: transparent !important;
+    border-radius: 2px;
+    user-select: none;
+    display: inline-block;
+  }
+
+  /* Stamp — rotated legal-document label */
+  .stamp {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 2px solid currentColor;
+    border-radius: 1px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transform: rotate(-2.5deg);
+    line-height: 1.6;
+  }
+
+  /* Horizontal rule with gradient */
+  .rule-crimson {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C0152A 40%, #C0152A 60%, transparent);
+    border: none;
+  }
+
+  .rule-navy {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #1E2D4A 40%, #1E2D4A 60%, transparent);
+    border: none;
+  }
+
+  /* Section label — small mono eyebrow text */
+  .section-label {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #C0152A;
+  }
+
+  /* Hover glow on crimson buttons */
+  .btn-crimson {
+    background-color: #C0152A;
+    color: #F4F6FA;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.875rem 2rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-crimson:hover {
+    background-color: #D42035;
+    box-shadow: 0 0 32px rgba(192, 21, 42, 0.45);
+  }
+
+  .btn-ghost {
+    background-color: transparent;
+    color: #B8C4D8;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.875rem 2rem;
+    border: 1px solid #1E2D4A;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .btn-ghost:hover {
+    border-color: #3D5A8A;
+    color: #E8ECF4;
+  }
+
+  /* Case file card */
+  .case-card {
+    background: linear-gradient(135deg, #0F1829 0%, #0A0F1E 100%);
+    border: 1px solid #1E2D4A;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .case-card:hover {
+    border-color: rgba(192, 21, 42, 0.45);
+    box-shadow: 0 4px 40px rgba(192, 21, 42, 0.08);
+  }
+
+  /* Step connector line */
+  .step-line {
+    width: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(to bottom, #1E2D4A, transparent);
+  }
+}
