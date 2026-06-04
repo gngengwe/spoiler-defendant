@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
+# lock file omitted — generated on Windows, causes npm ci failures on Linux CI.
+# CF Pages will run `npm install` and produce a correct Linux lock file on first build.
+package-lock.json
 /.pnp
 .pnp.js
 .yarn/install-state.gz
