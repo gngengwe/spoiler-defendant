@@ -25,7 +25,7 @@ function EmailForm() {
             You&apos;re on the case list.
           </span>
         </div>
-        <p className="text-navy-300 text-sm leading-relaxed">
+        <p className="text-cream-300 text-sm leading-relaxed">
           {SITE.cta.formDisclaimer}
         </p>
       </div>
@@ -34,7 +34,7 @@ function EmailForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-navy-400 uppercase" htmlFor="email">
+      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-cream-400 uppercase" htmlFor="email">
         {SITE.cta.emailLabel}
       </label>
       <div className="flex flex-col sm:flex-row gap-2">
@@ -47,7 +47,7 @@ function EmailForm() {
           placeholder={SITE.cta.emailPlaceholder}
           className="
             flex-1 bg-navy-800 border border-navy-600 focus:border-crimson-700
-            text-navy-100 placeholder-navy-600
+            text-cream-200 placeholder-navy-500
             px-4 py-3 text-sm outline-none
             rounded-sm transition-colors
           "
@@ -56,7 +56,7 @@ function EmailForm() {
           {SITE.cta.primary}
         </button>
       </div>
-      <p className="text-navy-600 text-xs">{SITE.cta.formDisclaimer}</p>
+      <p className="text-navy-500 text-xs">{SITE.cta.formDisclaimer}</p>
     </form>
   );
 }
@@ -83,7 +83,7 @@ function SuggestForm() {
             Defendant submitted.
           </span>
         </div>
-        <p className="text-navy-300 text-sm leading-relaxed">
+        <p className="text-cream-300 text-sm leading-relaxed">
           The prosecution will review your submission for Season Two.
         </p>
       </div>
@@ -92,7 +92,7 @@ function SuggestForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-navy-400 uppercase" htmlFor="movie">
+      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-cream-400 uppercase" htmlFor="movie">
         {SITE.cta.movieLabel}
       </label>
       <input
@@ -104,12 +104,12 @@ function SuggestForm() {
         placeholder={SITE.cta.moviePlaceholder}
         className="
           bg-navy-800 border border-navy-600 focus:border-gold-700
-          text-navy-100 placeholder-navy-600
+          text-cream-200 placeholder-navy-500
           px-4 py-3 text-sm outline-none
           rounded-sm transition-colors
         "
       />
-      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-navy-400 uppercase" htmlFor="notes">
+      <label className="font-mono text-[0.65rem] font-bold tracking-[0.2em] text-cream-400 uppercase" htmlFor="notes">
         {SITE.cta.notesLabel}
       </label>
       <textarea
@@ -120,7 +120,7 @@ function SuggestForm() {
         placeholder={SITE.cta.notesPlaceholder}
         className="
           bg-navy-800 border border-navy-600 focus:border-gold-700
-          text-navy-100 placeholder-navy-600
+          text-cream-200 placeholder-navy-500
           px-4 py-3 text-sm outline-none resize-none
           rounded-sm transition-colors
         "
@@ -147,12 +147,12 @@ export function SignupSection() {
           <span className="section-label">Join the Case</span>
         </div>
 
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-100 leading-tight mb-4 max-w-2xl">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream-100 leading-tight mb-4 max-w-2xl">
           The first case file is coming.
           <br />
           <span className="text-crimson-600">Don&apos;t miss the opening statement.</span>
         </h2>
-        <p className="text-navy-300 text-lg leading-relaxed max-w-xl mb-16">
+        <p className="text-cream-300 text-lg leading-relaxed max-w-xl mb-16">
           Sign up to receive the first episode the moment it drops. Or submit a
           movie you think deserves a retrial.
         </p>
@@ -165,8 +165,8 @@ export function SignupSection() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-px h-10 bg-crimson-600" aria-hidden="true" />
               <div>
-                <h3 className="font-playfair text-xl font-bold text-navy-100">Join the Case List</h3>
-                <p className="text-navy-400 text-sm mt-0.5">Get the first episode on release day.</p>
+                <h3 className="font-playfair text-xl font-bold text-cream-100">Join the Case List</h3>
+                <p className="text-cream-400 text-sm mt-0.5">Get the first episode on release day.</p>
               </div>
             </div>
             <EmailForm />
@@ -177,8 +177,8 @@ export function SignupSection() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-px h-10 bg-gold-500" aria-hidden="true" />
               <div>
-                <h3 className="font-playfair text-xl font-bold text-navy-100">Suggest a Defendant</h3>
-                <p className="text-navy-400 text-sm mt-0.5">Nominate a movie for Season Two.</p>
+                <h3 className="font-playfair text-xl font-bold text-cream-100">Suggest a Defendant</h3>
+                <p className="text-cream-400 text-sm mt-0.5">Nominate a movie for Season Two.</p>
               </div>
             </div>
             <SuggestForm />

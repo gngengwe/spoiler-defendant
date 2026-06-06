@@ -13,12 +13,12 @@ export function DocketSection() {
           <hr className="rule-crimson flex-1 max-w-xs" />
         </div>
 
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-100 leading-tight mb-4 max-w-2xl">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream-100 leading-tight mb-4 max-w-2xl">
           The docket is open.{" "}
           <span className="text-crimson-600">Court convenes soon.</span>
         </h2>
-        <p className="text-navy-300 text-lg leading-relaxed max-w-xl mb-16">
-          Four cases. Four famous films you think you know. Four verdicts we're
+        <p className="text-cream-300 text-lg leading-relaxed max-w-xl mb-16">
+          Four cases. Four famous films you think you know. Four verdicts we&apos;re
           asking you to reconsider.
         </p>
 
@@ -48,7 +48,7 @@ export function DocketSection() {
               </span>
 
               {/* Title */}
-              <span className="font-playfair text-lg font-semibold text-navy-100 group-hover:text-navy-50 transition-colors">
+              <span className="font-playfair text-lg font-semibold text-cream-100 group-hover:text-cream-200 transition-colors">
                 {item.title}
               </span>
 

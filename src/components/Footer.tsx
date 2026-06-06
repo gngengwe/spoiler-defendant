@@ -1,6 +1,5 @@
 import { SITE } from "@/config/site";
 
-// Simple SVG icon placeholders for social links
 const YoutubeIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -33,14 +32,14 @@ export function Footer() {
 
           {/* Brand column */}
           <div className="md:col-span-1">
-            <h2 className="font-playfair text-2xl font-black text-navy-100 mb-2">
+            <h2 className="font-playfair text-2xl font-black text-cream-100 mb-2">
               Spoiler<br />
               <span className="text-crimson-600">Defendant</span>
             </h2>
-            <p className="text-navy-400 text-sm leading-relaxed mt-3 max-w-xs">
+            <p className="text-cream-400 text-sm leading-relaxed mt-3 max-w-xs">
               {SITE.footer.tagline}
             </p>
-            <p className="font-mono text-[0.6rem] text-navy-700 tracking-widest uppercase mt-4">
+            <p className="font-mono text-[0.6rem] text-navy-600 tracking-widest uppercase mt-4">
               {SITE.sub}
             </p>
           </div>
@@ -52,16 +51,16 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { label: "The Format",       href: "#concept" },
-                { label: "Case Exhibits",    href: "#exhibits" },
-                { label: "Season One Docket",href: "#docket" },
-                { label: "Join the Case List",href: "#signup" },
-                { label: "Suggest a Movie",  href: "#suggest" },
+                { label: "The Format",        href: "#concept"  },
+                { label: "Case Exhibits",     href: "#exhibits" },
+                { label: "Season One Docket", href: "#docket"   },
+                { label: "Join the Case List",href: "#signup"   },
+                { label: "Suggest a Movie",   href: "#suggest"  },
               ].map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-navy-400 hover:text-navy-100 text-sm transition-colors"
+                    className="text-cream-400 hover:text-cream-200 text-sm transition-colors"
                   >
                     {link.label}
                   </a>
@@ -86,14 +85,14 @@ export function Footer() {
               <a
                 href={SITE.social.twitter}
                 aria-label="Twitter / X"
-                className="w-9 h-9 border border-navy-700 hover:border-navy-500 flex items-center justify-center text-navy-500 hover:text-navy-200 transition-colors rounded-sm"
+                className="w-9 h-9 border border-navy-700 hover:border-navy-500 flex items-center justify-center text-navy-500 hover:text-cream-300 transition-colors rounded-sm"
               >
                 <TwitterIcon />
               </a>
               <a
                 href={SITE.social.instagram}
                 aria-label="Instagram"
-                className="w-9 h-9 border border-navy-700 hover:border-navy-500 flex items-center justify-center text-navy-500 hover:text-navy-200 transition-colors rounded-sm"
+                className="w-9 h-9 border border-navy-700 hover:border-navy-500 flex items-center justify-center text-navy-500 hover:text-cream-300 transition-colors rounded-sm"
               >
                 <InstagramIcon />
               </a>
@@ -107,10 +106,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-navy-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="font-mono text-[0.6rem] text-navy-700 tracking-widest uppercase">
+          <p className="font-mono text-[0.6rem] text-navy-600 tracking-widest uppercase">
             {SITE.footer.copy}
           </p>
-          <p className="font-mono text-[0.6rem] text-navy-700 tracking-widest uppercase">
+          <p className="font-mono text-[0.6rem] text-navy-600 tracking-widest uppercase">
             All verdicts are final. Most movies are not.
           </p>
         </div>

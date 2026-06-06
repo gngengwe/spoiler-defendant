@@ -14,10 +14,10 @@ export function SampleCases() {
           <span className="section-label">Case Exhibits</span>
         </div>
 
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-100 leading-tight mb-4 max-w-2xl">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream-100 leading-tight mb-4 max-w-2xl">
           Three cases. Zero titles. You pick a side.
         </h2>
-        <p className="text-navy-300 text-base leading-relaxed max-w-xl mb-16">
+        <p className="text-cream-300 text-base leading-relaxed max-w-xl mb-16">
           These are real movies. Every detail is a clue. Comment your guess before
           you look anything up.
         </p>
@@ -37,7 +37,7 @@ export function SampleCases() {
                 className="absolute top-0 right-0 w-10 h-10"
                 style={{
                   clipPath: "polygon(100% 0, 0 0, 100% 100%)",
-                  background: "rgba(192,21,42,0.15)",
+                  background: "rgba(168,26,44,0.12)",
                 }}
                 aria-hidden="true"
               />
@@ -54,10 +54,10 @@ export function SampleCases() {
 
               {/* Case title */}
               <div>
-                <h3 className="font-playfair text-xl font-bold text-navy-100 leading-snug mb-3">
+                <h3 className="font-playfair text-xl font-bold text-cream-100 leading-snug mb-3">
                   {ex.title}
                 </h3>
-                <p className="text-navy-300 text-sm leading-relaxed">{ex.premise}</p>
+                <p className="text-cream-300 text-sm leading-relaxed">{ex.premise}</p>
               </div>
 
               {/* Divider */}

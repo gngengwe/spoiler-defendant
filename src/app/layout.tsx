@@ -47,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="bg-navy-950 text-navy-100 font-inter antialiased">
+      <body className="bg-navy-950 text-cream-200 font-inter antialiased">
         {/* Subtle film grain overlay */}
         <div className="grain-overlay" aria-hidden="true" />
         {children}

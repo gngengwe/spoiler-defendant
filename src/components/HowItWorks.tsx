@@ -13,11 +13,11 @@ export function HowItWorks() {
           <hr className="rule-crimson flex-1 max-w-xs" />
         </div>
 
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-100 leading-tight mb-4 max-w-2xl">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream-100 leading-tight mb-4 max-w-2xl">
           You are not just watching.{" "}
           <span className="text-crimson-600">You are solving.</span>
         </h2>
-        <p className="text-navy-300 text-lg leading-relaxed max-w-xl mb-20">
+        <p className="text-cream-300 text-lg leading-relaxed max-w-xl mb-20">
           Every episode is a game. Every comment section is a courtroom. Every
           reveal starts a debate.
         </p>
@@ -29,7 +29,7 @@ export function HowItWorks() {
             className="hidden md:block absolute left-[1.4rem] top-8 bottom-8 w-px"
             style={{
               background:
-                "linear-gradient(to bottom, #C0152A 0%, #1E2D4A 60%, transparent 100%)",
+                "linear-gradient(to bottom, #A81A2C 0%, #1E334C 60%, transparent 100%)",
             }}
             aria-hidden="true"
           />
@@ -46,10 +46,10 @@ export function HowItWorks() {
 
                 {/* Content */}
                 <div className="pt-2 pb-4">
-                  <h3 className="font-playfair text-xl font-semibold text-navy-100 mb-2 leading-snug">
+                  <h3 className="font-playfair text-xl font-semibold text-cream-100 mb-2 leading-snug">
                     {step.title}
                   </h3>
-                  <p className="text-navy-300 text-sm leading-relaxed max-w-md">
+                  <p className="text-cream-300 text-sm leading-relaxed max-w-md">
                     {step.body}
                   </p>
                 </div>

@@ -14,12 +14,12 @@ export function ConceptSection() {
         </div>
 
         {/* Heading */}
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-100 leading-tight mb-5 max-w-2xl">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream-100 leading-tight mb-5 max-w-2xl">
           Every case is a{" "}
           <em className="not-italic text-crimson-600">closed verdict</em>{" "}
           we re-open.
         </h2>
-        <p className="text-navy-300 text-lg leading-relaxed max-w-xl mb-20">
+        <p className="text-cream-300 text-lg leading-relaxed max-w-xl mb-20">
           You already watched the movie. You voted for the hero. We wrote the
           brief for the other side.
         </p>
@@ -40,10 +40,10 @@ export function ConceptSection() {
 
               {/* Content */}
               <div>
-                <h3 className="font-playfair text-lg font-semibold text-navy-100 mb-2 leading-snug">
+                <h3 className="font-playfair text-lg font-semibold text-cream-100 mb-2 leading-snug">
                   {step.title}
                 </h3>
-                <p className="text-navy-300 text-sm leading-relaxed">{step.body}</p>
+                <p className="text-cream-300 text-sm leading-relaxed">{step.body}</p>
               </div>
             </div>
           ))}
@@ -51,7 +51,7 @@ export function ConceptSection() {
 
         {/* Pull-quote */}
         <div className="mt-20 pt-10 border-t border-navy-700">
-          <blockquote className="font-playfair text-xl md:text-2xl italic text-navy-200 max-w-2xl leading-relaxed">
+          <blockquote className="font-playfair text-xl md:text-2xl italic text-cream-200 max-w-2xl leading-relaxed">
             &ldquo;Every movie has a prosecution.{" "}
             <span className="text-crimson-500 not-italic font-semibold">We write the defense.</span>
             &rdquo;

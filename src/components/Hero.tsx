@@ -33,7 +33,7 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="font-playfair leading-none tracking-tight select-none mb-6">
-          <span className="block text-[clamp(4rem,12vw,9rem)] font-black text-navy-100 leading-none">
+          <span className="block text-[clamp(4rem,12vw,9rem)] font-black text-cream-100 leading-none">
             {SITE.hero.headline[0]}
           </span>
           <span className="block text-[clamp(4rem,12vw,9rem)] font-black text-crimson-600 leading-none">
@@ -42,12 +42,12 @@ export function Hero() {
         </h1>
 
         {/* Tagline */}
-        <p className="text-[clamp(1rem,2.2vw,1.35rem)] text-navy-200 font-medium leading-relaxed max-w-xl mx-auto mb-3">
+        <p className="text-[clamp(1rem,2.2vw,1.35rem)] text-cream-200 font-medium leading-relaxed max-w-xl mx-auto mb-3">
           {SITE.tagline}
         </p>
 
         {/* Sub-tagline */}
-        <p className="font-mono text-xs tracking-[0.22em] text-navy-400 uppercase mb-12 max-w-sm mx-auto">
+        <p className="font-mono text-xs tracking-[0.22em] text-cream-400 uppercase mb-12 max-w-sm mx-auto">
           {SITE.hero.subline}
         </p>
 
